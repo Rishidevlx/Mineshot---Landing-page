@@ -2,7 +2,8 @@
   "version": 2,
   "functions": {
     "api/index.php": {
-      "runtime": "vercel-php@0.7.3"
+      "runtime": "vercel-php@0.7.3",
+      "includeFiles": "{config/**,admin/**,phpmailer/**,header.php,footer.php,index.php,projects.php,default.php,assets/**,plugins/**,Portfolio/**}"
     }
   },
   "routes": [
@@ -17,6 +18,10 @@
     {
       "src": "/Portfolio/(.*)",
       "dest": "/Portfolio/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/assets/img/mineshot/mineshot-icon.png"
     },
     {
       "src": "/(.*)",
