@@ -166,7 +166,7 @@ if ($pdo) {
                     <h6 class="wptb-item--subtitle">What We Do Best</h6>
                     <h1 class="wptb-item--title">Our Creative Expertise</h1>
                     <p class="wptb-item--description" style="max-width: 650px; font-size: 17px; line-height: 1.7;">We create high-quality photography and videography for
-                        automotive brands, products, and food businesses with creative concepts and
+                        automotive brands, consumer products, and food businesses with creative concepts and
                         professional execution.</p>
                 </div>
             </div>
@@ -459,7 +459,7 @@ if ($pdo) {
                             <h1 class="wptb-item--title lg mb-5">Why Choose <br> Mineshot<span class="text-outline">
                                     ?</span></h1>
                             <p class="wptb-item--description">Mineshot Production Hub specializes in commercial
-                                photography and videography for automobiles, consumer products, and the food
+                                photography and videography for automotive, consumer products, and the food
                                 industry. From sleek cars and rugged bikes to everyday products and delicious
                                 dishes, we create visually striking content that helps brands connect with their
                                 audience and stand out in the market. Our team manages the complete production
@@ -467,7 +467,7 @@ if ($pdo) {
                                 professional experience for every client. </p>
 
                             <div class="wptb-agency-experience--item">
-                                <span>16+</span> Years Experience
+                                <span>10+</span> Years Experience
                             </div>
                         </div>
 
@@ -486,7 +486,7 @@ if ($pdo) {
                     <div class="wptb-counter1 style1 mr-bottom-100 wow skewIn">
                         <div class="wptb-item--inner">
                             <div class="wptb-item--holder d-flex align-items-center">
-                                <div class="wptb-item--value"><span class="odometer" data-count="340"></span><span
+                                <div class="wptb-item--value"><span class="odometer" data-count="300"></span><span
                                         class="suffix">+</span></div>
                                 <br>
                                 <div class="wptb-item--text">Projects Completed</div>
@@ -497,7 +497,7 @@ if ($pdo) {
                     <div class="wptb-counter1 style1 mr-bottom-100 wow skewIn">
                         <div class="wptb-item--inner">
                             <div class="wptb-item--holder d-flex align-items-center">
-                                <div class="wptb-item--value"><span class="odometer" data-count="310"></span><span
+                                <div class="wptb-item--value"><span class="odometer" data-count="210"></span><span
                                         class="suffix">+</span></div>
                                 <br>
                                 <div class="wptb-item--text">Happy Clients</div>
@@ -529,7 +529,7 @@ if ($pdo) {
                         <div class="col-lg-7">
                             <h6 class="wptb-item--subtitle">Turning Ideas Into Powerful Visuals
                             </h6>
-                            <h1 class="wptb-item--title">About <div style="color:#d3bc7e">Mineshot Production Hub</div>
+                            <h1 class="wptb-item--title">About <div style="color:#9C7F3C">Mineshot Production Hub</div>
                             </h1>
                         </div>
                         <div class="col-lg-5 text-lg-end">
@@ -680,9 +680,6 @@ if ($pdo) {
                                     <p class="wptb-item--description mb-1">
                                         <a href="mailto:simbhu@mineshot.in" style="color: inherit; text-decoration: none;">simbhu@mineshot.in</a>
                                     </p>
-                                    <p class="wptb-item--description mb-1">
-                                        <a href="mailto:simbhu.sandy@gmail.com" style="color: inherit; text-decoration: none;">simbhu.sandy@gmail.com</a>
-                                    </p>
                                     <p class="wptb-item--description mb-2">
                                         <a href="mailto:mineshotproduction@gmail.com" style="color: inherit; text-decoration: none;">mineshotproduction@gmail.com</a>
                                     </p>
@@ -726,7 +723,7 @@ if ($pdo) {
         </div>
     </section>
 
-    <!-- Instagram -->
+    <!-- Instagram Section (Hidden)
     <div class="wptb-instagram--gallery top-footer-sec">
         <div class="wptb-item--inner d-flex align-items-center justify-content-center flex-wrap flex-md-nowrap">
             <div class="wptb-item">
@@ -769,6 +766,7 @@ if ($pdo) {
             </a>
         </div>
     </div>
+    -->
 </main>
 
 

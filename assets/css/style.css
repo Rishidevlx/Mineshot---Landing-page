@@ -1745,3 +1745,321 @@ body.theme-style--olive {
   border-radius: 12px;
   display: block;
 }
+
+/* ==========================================================================
+   Cream Background Theme for Main Sections (Header & Footer remain Dark)
+   ========================================================================== */
+
+/* Main Wrapper & Overall Body Content */
+main.wrapper {
+  background-color: #FAF7F2 !important;
+  color: #2D2D2D !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* Sections Base Backgrounds */
+main.wrapper section,
+main.wrapper .wptb-services-one,
+main.wrapper .wptb-project,
+main.wrapper .home-portfolio-section,
+main.wrapper .wptb-about-two,
+main.wrapper .portfolio-page-section,
+main.wrapper .wptb-contact-form {
+  background-color: #FAF7F2 !important;
+}
+
+main.wrapper .wptb-agency-experience {
+  background-color: #F4EFE6 !important;
+  background-image: none !important;
+}
+
+/* Switch layer textures to light versions */
+main.wrapper .both-version.wptb-item-layer img:first-child {
+  display: none !important;
+}
+main.wrapper .both-version.wptb-item-layer img + img {
+  display: block !important;
+}
+
+/* Typography on Cream Theme */
+main.wrapper h1,
+main.wrapper h2,
+main.wrapper h3,
+main.wrapper h4,
+main.wrapper h5,
+main.wrapper h6,
+main.wrapper .wptb-item--title,
+main.wrapper .wptb-heading .wptb-item--title {
+  color: #141414 !important;
+}
+
+/* Exclude slider and page banner titles from dark color */
+main.wrapper .wptb-slider .wptb-item--title,
+main.wrapper .wptb-page-heading .wptb-item--title,
+main.wrapper .breadcrumb-sec .wptb-item--title {
+  color: #FFFFFF !important;
+}
+main.wrapper .wptb-slider .wptb-item--subtitle {
+  color: #F0DEAA !important;
+}
+
+/* Subtitles (Gold / Warm accent) */
+main.wrapper .wptb-item--subtitle,
+main.wrapper .wptb-heading .wptb-item--subtitle {
+  color: #9C7F3C !important;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* Body Text & Descriptions */
+main.wrapper p,
+main.wrapper .wptb-item--description,
+main.wrapper .wptb-about--text p,
+main.wrapper .wptb-about--text .wptb-about--text-one {
+  color: #4A4A4A !important;
+}
+
+/* Section Title Decorative lines */
+main.wrapper .wptb-about-two .wptb-about--text h3::after {
+  background-color: #D8D0BF !important;
+}
+
+/* 1. Marquee Solid Black Text */
+main.wrapper .wptb-marquee {
+  background-color: #FAF7F2 !important;
+  padding: 25px 0;
+  border-top: 1px solid #EFE8DA;
+  border-bottom: 1px solid #EFE8DA;
+}
+
+main.wrapper .wptb-marquee .wptb-item--text .wptb-text-backdrop {
+  -webkit-text-stroke: 0px !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+}
+
+main.wrapper .wptb-marquee .wptb-item--text {
+  color: #000000 !important;
+}
+
+main.wrapper .wptb-marquee .wptb-item--text:hover .wptb-text-backdrop {
+  color: #000000 !important;
+  -webkit-text-stroke: 0px !important;
+}
+
+/* Agency Experience / Why Choose Mineshot Section */
+main.wrapper .wptb-agency-experience {
+  border-top: 1px solid #ECE4D5;
+  border-bottom: 1px solid #ECE4D5;
+}
+
+main.wrapper .wptb-agency-experience--item {
+  background-color: #FFFFFF !important;
+  color: #141414 !important;
+  border: 1px solid #E2DAC8 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+}
+
+main.wrapper .wptb-agency-experience--item span {
+  color: #9C7F3C !important;
+}
+
+main.wrapper .wptb-counter1 .wptb-item--value,
+main.wrapper .wptb-counter1 .wptb-item--value .suffix,
+main.wrapper .wptb-counter1 .wptb-item--value .odometer {
+  color: #141414 !important;
+  font-weight: 700;
+}
+
+main.wrapper .wptb-counter1 .wptb-item--text {
+  color: #555555 !important;
+  font-weight: 500;
+}
+
+/* 2. Call Now Button - Reduced Shadow and Hidden Flare */
+main.wrapper .wptb-about-two .wptb-item-layer-one {
+  display: none !important;
+}
+
+main.wrapper .round-button .btn,
+main.wrapper .wptb-about-two .round-button .btn {
+  background-color: #141414 !important;
+  color: #FAF7F2 !important;
+  border: 2px solid #E2DAC8 !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12) !important;
+}
+
+main.wrapper .round-button .btn:hover,
+main.wrapper .wptb-about-two .round-button .btn:hover {
+  background-color: #9C7F3C !important;
+  color: #FFFFFF !important;
+  border-color: #9C7F3C !important;
+  box-shadow: 0 8px 20px rgba(156, 127, 60, 0.25) !important;
+}
+
+/* Buttons on Cream */
+main.wrapper .btn-two,
+main.wrapper .btn.btn-two {
+  background-color: #141414 !important;
+  color: #FAF7F2 !important;
+  border: 1px solid #141414 !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+main.wrapper .btn-two:hover,
+main.wrapper .btn.btn-two:hover {
+  background-color: #9C7F3C !important;
+  color: #FFFFFF !important;
+  border-color: #9C7F3C !important;
+  box-shadow: 0 8px 20px rgba(156, 127, 60, 0.3);
+}
+
+/* 3. Contact Form & Contact Details - Preserve Original Styles with Correct Theme Colors */
+main.wrapper .wptb-contact-form::before {
+  display: none !important;
+}
+
+main.wrapper .wptb-contact-form .wptb-form--wrapper {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0px 30px 40px !important;
+}
+
+main.wrapper .wptb-contact-form .wptb-form--wrapper::before {
+  display: none !important;
+}
+
+main.wrapper .wptb-contact-form.style1 .form-control {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid #9C9485 !important;
+  border-radius: 0px !important;
+  color: #141414 !important;
+  font-size: 16px !important;
+  padding: 10px 0 !important;
+  box-shadow: none !important;
+}
+
+main.wrapper .wptb-contact-form.style1 .form-control::placeholder {
+  color: #777065 !important;
+}
+
+main.wrapper .wptb-contact-form.style1 .form-control:focus {
+  border-bottom-color: #000000 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+main.wrapper .wptb-contact-form button.btn {
+  background-color: #141414 !important;
+  color: #FAF7F2 !important;
+  border: 1px solid #141414 !important;
+  padding: 15px 45px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+main.wrapper .wptb-contact-form button.btn:hover {
+  background-color: #9C7F3C !important;
+  color: #FFFFFF !important;
+  border-color: #9C7F3C !important;
+  box-shadow: 0 8px 20px rgba(156, 127, 60, 0.3);
+}
+
+/* Contact Details Cards - Original Inline Card Style with Clean Text Colors */
+main.wrapper .wptb-office-address .wptb-icon-box1 {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+main.wrapper .wptb-office-address .wptb-icon-box1:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+main.wrapper .wptb-office-address .wptb-icon-box1 .wptb-item--icon {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12) !important;
+}
+
+main.wrapper .wptb-office-address .wptb-icon-box1 .wptb-item--title {
+  color: #141414 !important;
+}
+
+main.wrapper .wptb-office-address .wptb-icon-box1 .wptb-item--description,
+main.wrapper .wptb-office-address .wptb-icon-box1 .wptb-item--description a {
+  color: #4A4A4A !important;
+}
+
+main.wrapper .wptb-office-address .wptb-icon-box1 .wptb-item--link {
+  color: #141414 !important;
+  text-decoration: underline !important;
+  font-weight: 600 !important;
+}
+
+main.wrapper .wptb-office-address .wptb-icon-box1 .wptb-item--link:hover {
+  color: #9C7F3C !important;
+}
+
+/* ==========================================================================
+   Solution 1: Row-Wise Masonry Style Grid (Left-to-Right Order, Zero Crop, Zero Gaps)
+   ========================================================================== */
+main.wrapper .portfolio-page-section {
+  padding: 60px 0 100px;
+}
+
+main.wrapper .portfolio-page-section .portfolio-masonry-container {
+  margin-left: -12px !important;
+  margin-right: -12px !important;
+  position: relative;
+  transition: height 0.3s ease;
+}
+
+main.wrapper .portfolio-page-section .portfolio-grid-sizer,
+main.wrapper .portfolio-page-section .portfolio-masonry-container > div[class*="col-"] {
+  padding: 0 12px !important;
+  margin-bottom: 24px !important;
+  box-sizing: border-box;
+}
+
+main.wrapper .portfolio-page-section .grid-sizer {
+  display: none !important;
+}
+
+main.wrapper .portfolio-page-section .wptb-item--inner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  background: transparent;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+main.wrapper .portfolio-page-section .wptb-item--inner:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+main.wrapper .portfolio-page-section img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  display: block;
+  border-radius: 14px;
+  margin-bottom: 0 !important;
+}
+
+/* Swiper Controls on Cream */
+main.wrapper .wptb-slider .swiper-button-prev,
+main.wrapper .wptb-slider .swiper-button-next {
+  color: #FFFFFF !important;
+}
+
+
+

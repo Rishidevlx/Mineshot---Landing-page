@@ -71,10 +71,11 @@
                 </div>
                 <div class="social-box style-oval">
                     <ul>
-                        <li><a href="https://wa.me/919962222257" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
-                        <li><a href="https://www.facebook.com/share/1DzjLjphcx/" target="_blank"><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/mineshotproductionhub?utm_source=qr&stkn=MXRqMXVzNnQ5Z2c1OA==" target="_blank"><i class="bi bi-instagram"></i></a></li>
                         <li><a href="https://share.google/KLaLu4tIDUu55LW3Y" target="_blank"><i class="bi bi-google"></i></a></li>
+                        <li><a href="https://wa.me/919962222257" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+                        <li><a href="https://www.instagram.com/mineshotproductionhub?utm_source=qr&stkn=MXRqMXVzNnQ5Z2c1OA==" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="https://www.threads.com/@mineshotproductionhub?invite=0" target="_blank"><i class="bi bi-threads"></i></a></li>
+                        <li><a href="https://www.facebook.com/share/1DzjLjphcx/" target="_blank"><i class="bi bi-facebook"></i></a></li>
                         <li><a href="https://youtube.com/@mineshotproductionhub?si=cGt7S2lUEPhVrR2d" target="_blank"><i class="bi bi-youtube"></i></a></li>
                         <li><a href="https://pin.it/mRxtnsqg9" target="_blank"><i class="bi bi-pinterest"></i></a></li>
                     </ul>

@@ -16,10 +16,10 @@
     <section class="portfolio-page-section">
         <div class="container">
             <div class="wptb-project--inner">
-                <div class="has-radius effect-tilt"> 
+                <div class="has-radius"> 
 
-                    <div class="row">
-                        <div class="grid-sizer"></div>
+                    <div class="portfolio-masonry-container row">
+                        <div class="portfolio-grid-sizer col-lg-4 col-md-6 col-12"></div>
                         <div class="col-lg-4">
                             <div class="wptb-item--inner">
                                 <div class="wptb-item--image">
@@ -344,3 +344,21 @@
 </main>
 
 <?php include("footer.php") ?>
+
+<script>
+$(window).on('load', function() {
+    var $grid = $('.portfolio-masonry-container');
+    if ($grid.length) {
+        $grid.imagesLoaded(function() {
+            $grid.isotope({
+                itemSelector: '.portfolio-masonry-container > div[class*="col-"]:not(.portfolio-grid-sizer)',
+                percentPosition: true,
+                layoutMode: 'masonry',
+                masonry: {
+                    columnWidth: '.portfolio-grid-sizer'
+                }
+            });
+        });
+    }
+});
+</script>
