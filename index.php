@@ -229,103 +229,93 @@ if ($pdo) {
                 </div>
             </div>
 
-            <div class="effect-gradient has-radius">
-                <div class="grid gutter-10 clearfix">
-                    <div class="grid-sizer"></div>
-                    <div class="row">
-                        <?php if (!empty($homePortfolio)): ?>
-                            <?php foreach ($homePortfolio as $idx => $item): 
-                                if ($idx === 3 || $idx === 6) {
-                                    $colClass = 'col-md-8';
-                                } elseif ($idx === 7 || $idx === 8) {
-                                    $colClass = 'col-md-6';
-                                } else {
-                                    $colClass = 'col-md-4';
-                                }
-                            ?>
-                                <div class="grid-item <?= $colClass ?>">
-                                    <div class="wptb-item--inner">
-                                        <div class="wptb-item--image">
-                                            <img src="<?= htmlspecialchars($item['image_url']) ?>" alt="<?= htmlspecialchars($item['title'] ?: 'Mineshot Creative Work') ?>">
-                                        </div>
-                                    </div>
-                                </div>
-                            <?php endforeach; ?>
-                        <?php else: ?>
-                            <!-- Fallback 9 images -->
-                            <div class="grid-item col-md-4">
+            <div class="has-radius">
+                <div class="home-portfolio-masonry row">
+                    <div class="portfolio-grid-sizer col-lg-4 col-md-6 col-12"></div>
+                    <?php if (!empty($homePortfolio)): ?>
+                        <?php foreach ($homePortfolio as $item): ?>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4">
                                 <div class="wptb-item--inner">
                                     <div class="wptb-item--image">
-                                        <img src="assets/img/mineshot/gallery/gallery (2).jpeg" alt="img">
+                                        <img src="<?= htmlspecialchars($item['image_url']) ?>" alt="<?= htmlspecialchars($item['title'] ?: 'Mineshot Creative Work') ?>">
                                     </div>
                                 </div>
                             </div>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <!-- Fallback 9 images -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="wptb-item--inner">
+                                <div class="wptb-item--image">
+                                    <img src="assets/img/mineshot/gallery/gallery (2).jpeg" alt="img">
+                                </div>
+                            </div>
+                        </div>
 
-                            <div class="grid-item col-md-4">
-                                <div class="wptb-item--inner">
-                                    <div class="wptb-item--image">
-                                        <img src="assets/img/mineshot/gallery/gallery (3).jpeg" alt="img">
-                                    </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="wptb-item--inner">
+                                <div class="wptb-item--image">
+                                    <img src="assets/img/mineshot/gallery/gallery (3).jpeg" alt="img">
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="grid-item col-md-4">
-                                <div class="wptb-item--inner">
-                                    <div class="wptb-item--image">
-                                        <img src="assets/img/mineshot/gallery/gallery (1).jpg" alt="img">
-                                    </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="wptb-item--inner">
+                                <div class="wptb-item--image">
+                                    <img src="assets/img/mineshot/gallery/gallery (1).jpg" alt="img">
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="grid-item col-md-8">
-                                <div class="wptb-item--inner">
-                                    <div class="wptb-item--image">
-                                        <img src="assets/img/mineshot/gallery/gallery (9).jpeg" alt="img">
-                                    </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="wptb-item--inner">
+                                <div class="wptb-item--image">
+                                    <img src="assets/img/mineshot/gallery/gallery (9).jpeg" alt="img">
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="grid-item col-md-4">
-                                <div class="wptb-item--inner">
-                                    <div class="wptb-item--image">
-                                        <img src="assets/img/mineshot/gallery/gallery (10).jpeg" alt="img">
-                                    </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="wptb-item--inner">
+                                <div class="wptb-item--image">
+                                    <img src="assets/img/mineshot/gallery/gallery (10).jpeg" alt="img">
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="grid-item col-md-4">
-                                <div class="wptb-item--inner">
-                                    <div class="wptb-item--image">
-                                        <img src="assets/img/mineshot/gallery/gallery (11).jpg" alt="img">
-                                    </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="wptb-item--inner">
+                                <div class="wptb-item--image">
+                                    <img src="assets/img/mineshot/gallery/gallery (11).jpg" alt="img">
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="grid-item col-md-8">
-                                <div class="wptb-item--inner">
-                                    <div class="wptb-item--image">
-                                        <img src="assets/img/mineshot/gallery/gallery (12).jpeg" alt="img">
-                                    </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="wptb-item--inner">
+                                <div class="wptb-item--image">
+                                    <img src="assets/img/mineshot/gallery/gallery (12).jpeg" alt="img">
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="grid-item col-md-6">
-                                <div class="wptb-item--inner">
-                                    <div class="wptb-item--image">
-                                        <img src="assets/img/mineshot/gallery/gallery (13).jpeg" alt="img">
-                                    </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="wptb-item--inner">
+                                <div class="wptb-item--image">
+                                    <img src="assets/img/mineshot/gallery/gallery (13).jpeg" alt="img">
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="grid-item col-md-6">
-                                <div class="wptb-item--inner">
-                                    <div class="wptb-item--image">
-                                        <img src="assets/img/mineshot/gallery/gallery (30).jpg" alt="img">
-                                    </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="wptb-item--inner">
+                                <div class="wptb-item--image">
+                                    <img src="assets/img/mineshot/gallery/gallery (30).jpg" alt="img">
                                 </div>
                             </div>
-                        <?php endif; ?>
-                    </div>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
 
@@ -771,3 +761,21 @@ if ($pdo) {
 
 
 <?php include("footer.php") ?>
+
+<script>
+$(window).on('load', function() {
+    var $homeGrid = $('.home-portfolio-masonry');
+    if ($homeGrid.length) {
+        $homeGrid.imagesLoaded(function() {
+            $homeGrid.isotope({
+                itemSelector: '.home-portfolio-masonry > div[class*="col-"]:not(.portfolio-grid-sizer)',
+                percentPosition: true,
+                layoutMode: 'masonry',
+                masonry: {
+                    columnWidth: '.portfolio-grid-sizer'
+                }
+            });
+        });
+    }
+});
+</script>

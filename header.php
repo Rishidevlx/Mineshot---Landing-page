@@ -101,35 +101,14 @@
         <h6>Menu</h6>
         <div class="mr_navmenu"></div> <!-- Keep this div empty. Menu will come here by JavaScript -->
 
-        <h6>Contact Us</h6>
-        <div class="wptb-icon-box1 style2">
-            <div class="wptb-item--inner flex-start">
-                <div class="wptb-item--icon"><i class="bi bi-envelope"></i></div>
-                <div class="wptb-item--holder">
-                    <p class="wptb-item--description mb-1"><a href="mailto:simbhu@mineshot.in">simbhu@mineshot.in</a></p>
-                    <p class="wptb-item--description"><a href="mailto:mineshotproduction@gmail.com">mineshotproduction@gmail.com</a></p>
-                </div>
-            </div>
+        <h5 class="fw-bold mt-4 mb-3" style="color: #d3bc7e; letter-spacing: 1px;">About Me</h5>
+        <div class="about-sidebar-img mb-3" style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(211, 188, 126, 0.25);">
+            <img src="assets/img/mineshot/About.jpeg" alt="Simbhu Sandy" style="width: 100%; height: auto; display: block; object-fit: cover;">
         </div>
 
-        <div class="wptb-icon-box1 style2">
-            <div class="wptb-item--inner flex-start">
-                <div class="wptb-item--icon"><i class="bi bi-geo-alt"></i></div>
-                <div class="wptb-item--holder">
-                    <p class="wptb-item--description"><a href="https://maps.google.com/?q=No.35+4th+Cross+street,+Indranagar,+Adyar,+Chennai+600020" target="_blank">No.35 4th Cross street, Indranagar,
-                            Adyar, Chennai 600020</a></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="wptb-icon-box1 style2">
-            <div class="wptb-item--inner flex-start">
-                <div class="wptb-item--icon"><i class="bi bi-telephone"></i></div>
-                <div class="wptb-item--holder">
-                    <p class="wptb-item--description"><a href="tel:919962222257">+91 99622 22257</a></p>
-                </div>
-            </div>
-        </div>
+        <p style="font-size: 13.5px; line-height: 1.75; color: #b3b3b3; margin-bottom: 24px; text-align: justify;">
+            Hi , Simbhu Sandy is a visionary commercial photographer, entrepreneur, and the driving force behind Mineshot Production Hub. Specializing in high-impact automotive, product, and food photography, Etc... He possesses a rare ability to transform everyday subjects into striking, cinematic visual assets that command consumer attention.Above all, Simbhu Sandy is an incredibly passionate guy when it comes to the art of the visual frame. It is this relentless creative energy that motivated him to establish his own full-service advertisement production house. Today, through Mineshot Production Hub, he bridges the gap between commercial photography and premium production logistics, delivering comprehensive, end-to-end media campaigns that help brands scale and stand out in competitive markets
+        </p>
 
         <h6>Find Our Page</h6>
         <div class="social-box">

@@ -505,65 +505,61 @@
                 </div>
             </div>
 
-            <div class="effect-gradient has-radius">
-                <div class="grid gutter-10 clearfix">
-                    <div class="grid-sizer"></div>
-                    <div class="row">
-                        <div class="grid-item col-md-4">
-                            <div class="wptb-item--inner">
-                                <div class="wptb-item--image">
-                                    <img src="assets/img/mineshot/gallery/gallery (9).jpeg" alt="img">
-                                </div>
+            <div class="has-radius">
+                <div class="home-portfolio-masonry row">
+                    <div class="portfolio-grid-sizer col-lg-4 col-md-6 col-12"></div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="wptb-item--inner">
+                            <div class="wptb-item--image">
+                                <img src="assets/img/mineshot/gallery/gallery (9).jpeg" alt="img">
                             </div>
                         </div>
+                    </div>
 
-                        <div class="grid-item col-md-4">
-                            <div class="wptb-item--inner">
-                                <div class="wptb-item--image">
-                                    <img src="assets/img/mineshot/gallery/gallery (16).jpg" alt="img">
-                                </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="wptb-item--inner">
+                            <div class="wptb-item--image">
+                                <img src="assets/img/mineshot/gallery/gallery (16).jpg" alt="img">
                             </div>
                         </div>
+                    </div>
 
-                        <div class="grid-item col-md-4">
-                            <div class="wptb-item--inner">
-                                <div class="wptb-item--image">
-                                    <img src="assets/img/mineshot/gallery/gallery (8).jpg" alt="img">
-                                </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="wptb-item--inner">
+                            <div class="wptb-item--image">
+                                <img src="assets/img/mineshot/gallery/gallery (8).jpg" alt="img">
                             </div>
                         </div>
+                    </div>
 
-                        <div class="grid-item col-md-8">
-                            <div class="wptb-item--inner">
-                                <div class="wptb-item--image">
-                                    <img src="assets/img/mineshot/gallery/gallery (18).jpg" alt="img">
-                                </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="wptb-item--inner">
+                            <div class="wptb-item--image">
+                                <img src="assets/img/mineshot/gallery/gallery (18).jpg" alt="img">
                             </div>
                         </div>
+                    </div>
 
-
-                        <div class="grid-item col-md-4">
-                            <div class="wptb-item--inner">
-                                <div class="wptb-item--image">
-                                    <img src="assets/img/mineshot/gallery/gallery (11).jpg" alt="img">
-                                </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="wptb-item--inner">
+                            <div class="wptb-item--image">
+                                <img src="assets/img/mineshot/gallery/gallery (11).jpg" alt="img">
                             </div>
                         </div>
+                    </div>
 
-                        <div class="grid-item col-md-8">
-                            <div class="wptb-item--inner">
-                                <div class="wptb-item--image">
-                                    <img src="assets/img/mineshot/gallery/gallery (20).jpg" alt="img">
-                                </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="wptb-item--inner">
+                            <div class="wptb-item--image">
+                                <img src="assets/img/mineshot/gallery/gallery (20).jpg" alt="img">
                             </div>
                         </div>
+                    </div>
 
-
-                        <div class="grid-item col-md-4">
-                            <div class="wptb-item--inner">
-                                <div class="wptb-item--image">
-                                    <img src="assets/img/mineshot/gallery/gallery (111).jpeg" alt="img">
-                                </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="wptb-item--inner">
+                            <div class="wptb-item--image">
+                                <img src="assets/img/mineshot/gallery/gallery (111).jpeg" alt="img">
                             </div>
                         </div>
                     </div>
@@ -830,3 +826,21 @@
 
 
 <?php include("footer.php") ?>
+
+<script>
+$(window).on('load', function() {
+    var $homeGrid = $('.home-portfolio-masonry');
+    if ($homeGrid.length) {
+        $homeGrid.imagesLoaded(function() {
+            $homeGrid.isotope({
+                itemSelector: '.home-portfolio-masonry > div[class*="col-"]:not(.portfolio-grid-sizer)',
+                percentPosition: true,
+                layoutMode: 'masonry',
+                masonry: {
+                    columnWidth: '.portfolio-grid-sizer'
+                }
+            });
+        });
+    }
+});
+</script>

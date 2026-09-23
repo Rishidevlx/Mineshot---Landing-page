@@ -1726,9 +1726,12 @@ body.theme-style--olive {
   width: 32%;
 }
 .home-portfolio-section img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  display: block;
+  border-radius: 14px;
 }
 .top-footer-sec img {
   width: 100%;
@@ -2014,7 +2017,9 @@ main.wrapper .portfolio-page-section {
   padding: 60px 0 100px;
 }
 
-main.wrapper .portfolio-page-section .portfolio-masonry-container {
+/* Portfolio Masonry Container (Projects Page & Home Page) */
+main.wrapper .portfolio-page-section .portfolio-masonry-container,
+main.wrapper .home-portfolio-section .home-portfolio-masonry {
   margin-left: -12px !important;
   margin-right: -12px !important;
   position: relative;
@@ -2022,17 +2027,21 @@ main.wrapper .portfolio-page-section .portfolio-masonry-container {
 }
 
 main.wrapper .portfolio-page-section .portfolio-grid-sizer,
-main.wrapper .portfolio-page-section .portfolio-masonry-container > div[class*="col-"] {
+main.wrapper .portfolio-page-section .portfolio-masonry-container > div[class*="col-"],
+main.wrapper .home-portfolio-section .portfolio-grid-sizer,
+main.wrapper .home-portfolio-section .home-portfolio-masonry > div[class*="col-"] {
   padding: 0 12px !important;
   margin-bottom: 24px !important;
   box-sizing: border-box;
 }
 
-main.wrapper .portfolio-page-section .grid-sizer {
+main.wrapper .portfolio-page-section .grid-sizer,
+main.wrapper .home-portfolio-section .grid-sizer {
   display: none !important;
 }
 
-main.wrapper .portfolio-page-section .wptb-item--inner {
+main.wrapper .portfolio-page-section .wptb-item--inner,
+main.wrapper .home-portfolio-section .wptb-item--inner {
   position: relative;
   overflow: hidden;
   border-radius: 14px;
@@ -2040,12 +2049,14 @@ main.wrapper .portfolio-page-section .wptb-item--inner {
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-main.wrapper .portfolio-page-section .wptb-item--inner:hover {
+main.wrapper .portfolio-page-section .wptb-item--inner:hover,
+main.wrapper .home-portfolio-section .wptb-item--inner:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
-main.wrapper .portfolio-page-section img {
+main.wrapper .portfolio-page-section img,
+main.wrapper .home-portfolio-section img {
   width: 100% !important;
   height: auto !important;
   max-height: none !important;
@@ -2060,6 +2071,7 @@ main.wrapper .wptb-slider .swiper-button-prev,
 main.wrapper .wptb-slider .swiper-button-next {
   color: #FFFFFF !important;
 }
+
 
 
 

@@ -643,16 +643,52 @@
 /* End Left Panel Menu Toggle  */
 
 .mr_menu {
-  width: 300px;
-  background: var(--color-dark-twelve);
-  padding: 20px;
+  width: 380px;
+  max-width: 90vw;
+  background: #111111;
+  padding: 30px 24px;
   height: 100%;
   position: fixed;
-  left: -300px;
+  left: -420px;
   top: 0;
   z-index: 14;
   transition: var(--transition-base);
   overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.mr_menu .social-box ul {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap !important;
+  gap: 7px;
+  padding: 0;
+  margin: 0;
+}
+
+.mr_menu .social-box ul li {
+  margin: 0 !important;
+  flex-shrink: 0;
+}
+
+.mr_menu .social-box ul li a {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.mr_menu .social-box ul li a:hover {
+  background: #9C7F3C;
+  color: #FFFFFF;
 }
 
 .mr_menu::-webkit-scrollbar {
