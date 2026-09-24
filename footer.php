@@ -73,11 +73,13 @@
                     <ul>
                         <li><a href="https://share.google/KLaLu4tIDUu55LW3Y" target="_blank"><i class="bi bi-google"></i></a></li>
                         <li><a href="https://wa.me/919962222257" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/mineshotproductionhub-simbhusandy?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="bi bi-linkedin"></i></a></li>
                         <li><a href="https://www.instagram.com/mineshotproductionhub?utm_source=qr&stkn=MXRqMXVzNnQ5Z2c1OA==" target="_blank"><i class="bi bi-instagram"></i></a></li>
                         <li><a href="https://www.threads.com/@mineshotproductionhub?invite=0" target="_blank"><i class="bi bi-threads"></i></a></li>
                         <li><a href="https://www.facebook.com/share/1DzjLjphcx/" target="_blank"><i class="bi bi-facebook"></i></a></li>
                         <li><a href="https://youtube.com/@mineshotproductionhub?si=cGt7S2lUEPhVrR2d" target="_blank"><i class="bi bi-youtube"></i></a></li>
                         <li><a href="https://pin.it/mRxtnsqg9" target="_blank"><i class="bi bi-pinterest"></i></a></li>
+                        <li><a href="https://x.com/Mineshothub" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
                     </ul>
                 </div>
             </div>

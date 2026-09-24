@@ -450,16 +450,16 @@
 }
 
 .aside_info_wrapper {
-  padding: 30px 45px;
+  padding: 30px 35px;
   background: #0d0e12;
-  width: 480px;
-  max-width: 92vw;
+  width: 500px;
+  max-width: 95vw;
   height: 100%;
   text-align: center;
   position: fixed;
   top: 0;
   bottom: 0;
-  right: -520px;
+  right: -550px;
   overflow-y: auto;
   z-index: 9999;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -555,7 +555,37 @@
 }
 
 .aside_info_wrapper .social-box ul {
+  display: flex !important;
+  align-items: center;
   justify-content: center;
+  flex-wrap: nowrap !important;
+  gap: 6px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.aside_info_wrapper .social-box ul li {
+  margin: 0 !important;
+  flex-shrink: 0;
+}
+
+.aside_info_wrapper .social-box ul li a {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.aside_info_wrapper .social-box ul li a:hover {
+  background: #d3bc7e;
+  color: #000;
 }
 
 .aside_info_wrapper .wptb-icon-box1 {
@@ -643,13 +673,13 @@
 /* End Left Panel Menu Toggle  */
 
 .mr_menu {
-  width: 380px;
-  max-width: 90vw;
+  width: 100%;
+  max-width: 440px;
   background: #111111;
-  padding: 30px 24px;
+  padding: 30px 20px;
   height: 100%;
   position: fixed;
-  left: -420px;
+  left: -100%;
   top: 0;
   z-index: 14;
   transition: var(--transition-base);
@@ -657,12 +687,21 @@
   overflow-y: auto;
 }
 
+@media (max-width: 575px) {
+  .mr_menu {
+    width: 100vw;
+    max-width: 100vw;
+    left: -100vw;
+    padding: 30px 18px;
+  }
+}
+
 .mr_menu .social-box ul {
   display: flex !important;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: nowrap !important;
-  gap: 7px;
+  gap: 5px;
   padding: 0;
   margin: 0;
 }
@@ -673,10 +712,10 @@
 }
 
 .mr_menu .social-box ul li a {
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-  font-size: 14px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 13px;
   display: flex;
   align-items: center;
   justify-content: center;

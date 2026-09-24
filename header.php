@@ -107,7 +107,7 @@
         </div>
 
         <p style="font-size: 13.5px; line-height: 1.75; color: #b3b3b3; margin-bottom: 24px; text-align: justify;">
-            Hi , Simbhu Sandy is a visionary commercial photographer, entrepreneur, and the driving force behind Mineshot Production Hub. Specializing in high-impact automotive, product, and food photography, Etc... He possesses a rare ability to transform everyday subjects into striking, cinematic visual assets that command consumer attention.Above all, Simbhu Sandy is an incredibly passionate guy when it comes to the art of the visual frame. It is this relentless creative energy that motivated him to establish his own full-service advertisement production house. Today, through Mineshot Production Hub, he bridges the gap between commercial photography and premium production logistics, delivering comprehensive, end-to-end media campaigns that help brands scale and stand out in competitive markets
+            hi  i'm Simbhu Sandy is a visionary commercial photographer, entrepreneur, and the driving force behind Mineshot Production Hub. Specializing in high-impact Automotive, All types of Products, Fashions and Food photography, Etc... He possesses a rare ability to transform everyday subjects into striking, cinematic visual assets that command consumer attention.Above all, Simbhu Sandy is an incredibly passionate guy when it comes to the art of the visual frame. It is this relentless creative energy that motivated him to establish his own full-service advertisement production house. Today, through Mineshot Production Hub, he bridges the gap between commercial photography and premium production logistics, delivering comprehensive, end-to-end media campaigns that help brands scale and stand out in competitive markets
         </p>
 
         <h6>Find Our Page</h6>
@@ -115,11 +115,13 @@
             <ul>
                 <li><a href="https://share.google/KLaLu4tIDUu55LW3Y" target="_blank"><i class="bi bi-google"></i></a></li>
                 <li><a href="https://wa.me/919962222257" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mineshotproductionhub-simbhusandy?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="bi bi-linkedin"></i></a></li>
                 <li><a href="https://www.instagram.com/mineshotproductionhub?utm_source=qr&stkn=MXRqMXVzNnQ5Z2c1OA==" target="_blank"><i class="bi bi-instagram"></i></a></li>
                 <li><a href="https://www.threads.com/@mineshotproductionhub?invite=0" target="_blank"><i class="bi bi-threads"></i></a></li>
                 <li><a href="https://www.facebook.com/share/1DzjLjphcx/" target="_blank"><i class="bi bi-facebook"></i></a></li>
                 <li><a href="https://youtube.com/@mineshotproductionhub?si=cGt7S2lUEPhVrR2d" target="_blank"><i class="bi bi-youtube"></i></a></li>
                 <li><a href="https://pin.it/mRxtnsqg9" target="_blank"><i class="bi bi-pinterest"></i></a></li>
+                <li><a href="https://x.com/Mineshothub" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
             </ul>
         </div>
     </div>
@@ -136,7 +138,7 @@
             </div>
 
             <p style="font-size: 13.5px; line-height: 1.75; color: #b3b3b3; margin-bottom: 24px; text-align: justify;">
-                Hi , Simbhu Sandy is a visionary commercial photographer, entrepreneur, and the driving force behind Mineshot Production Hub. Specializing in high-impact automotive, product, and food photography, Etc... He possesses a rare ability to transform everyday subjects into striking, cinematic visual assets that command consumer attention.Above all, Simbhu Sandy is an incredibly passionate guy when it comes to the art of the visual frame. It is this relentless creative energy that motivated him to establish his own full-service advertisement production house. Today, through Mineshot Production Hub, he bridges the gap between commercial photography and premium production logistics, delivering comprehensive, end-to-end media campaigns that help brands scale and stand out in competitive markets
+                hi  i'm Simbhu Sandy is a visionary commercial photographer, entrepreneur, and the driving force behind Mineshot Production Hub. Specializing in high-impact Automotive, All types of Products, Fashions and Food photography, Etc... He possesses a rare ability to transform everyday subjects into striking, cinematic visual assets that command consumer attention.Above all, Simbhu Sandy is an incredibly passionate guy when it comes to the art of the visual frame. It is this relentless creative energy that motivated him to establish his own full-service advertisement production house. Today, through Mineshot Production Hub, he bridges the gap between commercial photography and premium production logistics, delivering comprehensive, end-to-end media campaigns that help brands scale and stand out in competitive markets
             </p>
 
             <div class="aside_logo logo text-center mb-4">
@@ -148,11 +150,13 @@
                 <ul>
                     <li><a href="https://share.google/KLaLu4tIDUu55LW3Y" target="_blank"><i class="bi bi-google"></i></a></li>
                     <li><a href="https://wa.me/919962222257" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/mineshotproductionhub-simbhusandy?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="bi bi-linkedin"></i></a></li>
                     <li><a href="https://www.instagram.com/mineshotproductionhub?utm_source=qr&stkn=MXRqMXVzNnQ5Z2c1OA==" target="_blank"><i class="bi bi-instagram"></i></a></li>
                     <li><a href="https://www.threads.com/@mineshotproductionhub?invite=0" target="_blank"><i class="bi bi-threads"></i></a></li>
                     <li><a href="https://www.facebook.com/share/1DzjLjphcx/" target="_blank"><i class="bi bi-facebook"></i></a></li>
                     <li><a href="https://youtube.com/@mineshotproductionhub?si=cGt7S2lUEPhVrR2d" target="_blank"><i class="bi bi-youtube"></i></a></li>
                     <li><a href="https://pin.it/mRxtnsqg9" target="_blank"><i class="bi bi-pinterest"></i></a></li>
+                    <li><a href="https://x.com/Mineshothub" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
                 </ul>
             </div>
         </div>
