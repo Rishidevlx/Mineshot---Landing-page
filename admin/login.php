@@ -3,7 +3,7 @@
 require_once __DIR__ . '/auth.php';
 
 if (isAdminLoggedIn()) {
-    header('Location: index.php');
+    header('Location: /admin/index.php');
     exit;
 }
 
@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         if ($authenticated) {
-            header('Location: index.php');
+            header('Location: /admin/index.php');
             exit;
         } else {
             $error = 'Invalid email address or password.';
