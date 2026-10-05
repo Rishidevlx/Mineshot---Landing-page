@@ -3,8 +3,4 @@
 .env.local
 .vscode
 .idea
-Dockerfile
-Dockerfile.vercel
-Caddyfile
 demo
-README.md
