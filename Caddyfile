@@ -1,0 +1,20 @@
+{
+    frankenphp
+    order php_server before file_server
+}
+
+:{$PORT:8080} {
+    root * /app
+    encode zstd gzip
+
+    # Redirect /admin to /admin/
+    redir /admin /admin/ 308
+
+    # PHP handler via FrankenPHP
+    php_server {
+        index index.php
+    }
+
+    # Serve static files (CSS, JS, Images, Fonts) directly
+    file_server
+}
