@@ -37,49 +37,58 @@ if (preg_match('/\.(css|js|png|jpg|jpeg|gif|webp|svg|ico|woff|woff2|ttf|eot)$/i'
     }
 }
 
-// 1. Home route
-if (empty($path) || $path === 'index.php') {
+try {
+    // 1. Home route
+    if (empty($path) || $path === 'index.php') {
+        require $rootDir . '/index.php';
+        exit;
+    }
+
+    // 2. Admin routes
+    if ($path === 'admin' || $path === 'admin/' || $path === 'admin/index.php') {
+        require $rootDir . '/admin/index.php';
+        exit;
+    }
+
+    if ($path === 'admin/login' || $path === 'admin/login.php') {
+        require $rootDir . '/admin/login.php';
+        exit;
+    }
+
+    if ($path === 'admin/logout' || $path === 'admin/logout.php') {
+        require $rootDir . '/admin/logout.php';
+        exit;
+    }
+
+    if ($path === 'admin/api' || $path === 'admin/api.php') {
+        require $rootDir . '/admin/api.php';
+        exit;
+    }
+
+    // 3. Projects route
+    if ($path === 'projects' || $path === 'projects.php') {
+        require $rootDir . '/projects.php';
+        exit;
+    }
+
+    // 4. Any direct PHP file match
+    if (file_exists($rootDir . '/' . $path) && is_file($rootDir . '/' . $path)) {
+        require $rootDir . '/' . $path;
+        exit;
+    }
+
+    if (file_exists($rootDir . '/' . $path . '.php')) {
+        require $rootDir . '/' . $path . '.php';
+        exit;
+    }
+
+    // Fallback to index.php
     require $rootDir . '/index.php';
-    exit;
+} catch (Throwable $e) {
+    http_response_code(500);
+    echo "<div style='font-family:sans-serif;padding:30px;background:#111;color:#ff6b6b;'>";
+    echo "<h2>Application Execution Error</h2>";
+    echo "<p><strong>Message:</strong> " . htmlspecialchars($e->getMessage()) . "</p>";
+    echo "<p><strong>File:</strong> " . htmlspecialchars($e->getFile()) . " on line " . $e->getLine() . "</p>";
+    echo "</div>";
 }
-
-// 2. Admin routes
-if ($path === 'admin' || $path === 'admin/' || $path === 'admin/index.php') {
-    require $rootDir . '/admin/index.php';
-    exit;
-}
-
-if ($path === 'admin/login' || $path === 'admin/login.php') {
-    require $rootDir . '/admin/login.php';
-    exit;
-}
-
-if ($path === 'admin/logout' || $path === 'admin/logout.php') {
-    require $rootDir . '/admin/logout.php';
-    exit;
-}
-
-if ($path === 'admin/api' || $path === 'admin/api.php') {
-    require $rootDir . '/admin/api.php';
-    exit;
-}
-
-// 3. Projects route
-if ($path === 'projects' || $path === 'projects.php') {
-    require $rootDir . '/projects.php';
-    exit;
-}
-
-// 4. Any direct PHP file match
-if (file_exists($rootDir . '/' . $path) && is_file($rootDir . '/' . $path)) {
-    require $rootDir . '/' . $path;
-    exit;
-}
-
-if (file_exists($rootDir . '/' . $path . '.php')) {
-    require $rootDir . '/' . $path . '.php';
-    exit;
-}
-
-// Fallback to index.php
-require $rootDir . '/index.php';

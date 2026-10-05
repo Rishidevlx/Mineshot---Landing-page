@@ -69,18 +69,32 @@ if (!function_exists('getDBConnection')) {
             ];
 
             // Configure SSL for TiDB Cloud
-            if (!empty($sslCa) && file_exists($sslCa)) {
-                $options[PDO::MYSQL_ATTR_SSL_CA] = $sslCa;
-            } else {
-                // Setting MYSQL_ATTR_SSL_CA to true/dummy forces TLS/SSL connection for TiDB Serverless
-                $options[PDO::MYSQL_ATTR_SSL_CA] = true;
+            $caPaths = [
+                $sslCa,
+                '/etc/ssl/certs/ca-certificates.crt',
+                '/etc/pki/tls/certs/ca-bundle.crt',
+                '/etc/ssl/cert.pem'
+            ];
+
+            $foundCa = null;
+            foreach ($caPaths as $ca) {
+                if (!empty($ca) && file_exists($ca)) {
+                    $foundCa = $ca;
+                    break;
+                }
+            }
+
+            if ($foundCa) {
+                $options[PDO::MYSQL_ATTR_SSL_CA] = $foundCa;
+            }
+            if (defined('PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT')) {
                 $options[PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT] = false;
             }
 
             $pdo = new PDO($dsn, $user, $pass, $options);
             ensureDatabaseSchema($pdo);
             return $pdo;
-        } catch (PDOException $e) {
+        } catch (Throwable $e) {
             error_log("Database connection error: " . $e->getMessage());
             return null;
         }
